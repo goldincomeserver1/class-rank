@@ -115,7 +115,7 @@ export default function RankCalculator() {
               </p>
               <p className="text-sm text-muted-foreground">Percentile</p>
               <div className="mt-2 inline-flex items-center px-3 py-1 rounded-full bg-primary/10">
-                <span className="text-sm font-medium">Quartile {result.quartile}</span>
+                <span className="text-sm font-bold">Quartile {result.quartile}</span>
               </div>
             </div>
           </div>
