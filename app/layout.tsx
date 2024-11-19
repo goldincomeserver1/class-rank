@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://unique-melomakarona-deef11.netlify.app/" />
+        <link rel="canonical" href="https://classrankcalculator.xyz/" />
         <meta name="author" content="Class Rank Calculator Team" />
       </head>
       <body className={inter.className}>

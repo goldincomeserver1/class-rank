@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://unique-melomakarona-deef11.netlify.app/sitemap.xml',
+    sitemap: 'https://classrankcalculator.xyz/sitemap.xml',
   }
 }
