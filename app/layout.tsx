@@ -46,6 +46,18 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://classrankcalculator.xyz/" />
         <meta name="author" content="Class Rank Calculator Team" />
+         {/* Google tag (gtag.js) */}
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NGZ3E750E"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-2NGZ3E750E');
+            `,
+          }}
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider
