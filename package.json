@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "copy app\\main.xml build\\main.xml",
     "start": "next start",
     "lint": "next lint"
   },

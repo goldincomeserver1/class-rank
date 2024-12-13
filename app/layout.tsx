@@ -46,6 +46,7 @@ export default function RootLayout({
       <head>
         <link rel="canonical" href="https://classrankcalculator.xyz/" />
         <meta name="author" content="Class Rank Calculator Team" />
+        <meta name="google-adsense-account" content="ca-pub-7645420353221335" />
          {/* Google tag (gtag.js) */}
          <script async src="https://www.googletagmanager.com/gtag/js?id=G-2NGZ3E750E"></script>
         <script
@@ -58,6 +59,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
