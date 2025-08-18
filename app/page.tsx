@@ -92,6 +92,74 @@ export default function Home() {
             </div>
           </div>
         </div>
+    {/* comparison table */}
+        <section className="py-6 bg-gray-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-6">
+              Percentile vs. Quartile
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="min-w-full border border-gray-200 rounded-xl">
+                <thead className="bg-blue-600 text-white">
+                  <tr>
+                    <th className="px-6 py-3 text-left">Metric</th>
+                    <th className="px-6 py-3 text-left">Definition</th>
+                    <th className="px-6 py-3 text-left">Why It Matters</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-6 py-4 font-semibold">Percentile</td>
+                    <td className="px-6 py-4">
+                      The % of classmates you outperformed.
+                    </td>
+                    <td className="px-6 py-4">
+                      Helps show relative performance at a glance.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-semibold">Quartile</td>
+                    <td className="px-6 py-4">
+                      Divides class into 4 equal performance groups.
+                    </td>
+                    <td className="px-6 py-4">
+                      Commonly used by schools and scholarships.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="py-6 bg-white">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-2xl font-bold mb-6">What Students Say</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="p-6 bg-gray-50 rounded-xl shadow">
+                <p className="text-gray-600 italic">
+                  “This calculator helped me instantly know my percentile for
+                  college apps. Super easy!”
+                </p>
+                <p className="mt-4 font-semibold">— Sarah, High School Senior</p>
+              </div>
+              <div className="p-6 bg-gray-50 rounded-xl shadow">
+                <p className="text-gray-600 italic">
+                  “Our counselor recommended it. Now I track my rank every
+                  semester.”
+                </p>
+                <p className="mt-4 font-semibold">— David, Junior Student</p>
+              </div>
+              <div className="p-6 bg-gray-50 rounded-xl shadow">
+                <p className="text-gray-600 italic">
+                  “A must-have tool if you’re preparing for scholarships.”
+                </p>
+                <p className="mt-4 font-semibold">— Priya, College Applicant</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Tips for Success */}
         <div className="bg-card p-6 rounded-xl shadow-lg mb-12">
