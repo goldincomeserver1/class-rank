@@ -92,74 +92,77 @@ export default function Home() {
             </div>
           </div>
         </div>
-    {/* comparison table */}
-        <section className="py-6 bg-gray-50">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-6">
+
+        {/* Comparison Table */}
+        <div className="bg-card p-8 rounded-xl shadow-lg mb-12">
+          <div className="flex items-center gap-2 mb-6">
+            <Trophy className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl font-bold m-0">
               Percentile vs. Quartile
             </h2>
-            <div className="overflow-x-auto">
-              <table className="min-w-full border border-gray-200 rounded-xl">
-                <thead className="bg-blue-600 text-white">
-                  <tr>
-                    <th className="px-6 py-3 text-left">Metric</th>
-                    <th className="px-6 py-3 text-left">Definition</th>
-                    <th className="px-6 py-3 text-left">Why It Matters</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  <tr>
-                    <td className="px-6 py-4 font-semibold">Percentile</td>
-                    <td className="px-6 py-4">
-                      The % of classmates you outperformed.
-                    </td>
-                    <td className="px-6 py-4">
-                      Helps show relative performance at a glance.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 font-semibold">Quartile</td>
-                    <td className="px-6 py-4">
-                      Divides class into 4 equal performance groups.
-                    </td>
-                    <td className="px-6 py-4">
-                      Commonly used by schools and scholarships.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
           </div>
-        </section>
+          <div className="overflow-x-auto">
+            <table className="min-w-full border border-border rounded-xl">
+              <thead className="bg-primary text-primary-foreground">
+                <tr>
+                  <th className="px-6 py-3 text-left font-semibold">Metric</th>
+                  <th className="px-6 py-3 text-left font-semibold">Definition</th>
+                  <th className="px-6 py-3 text-left font-semibold">Why It Matters</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                <tr className="bg-primary/5">
+                  <td className="px-6 py-4 font-semibold">Percentile</td>
+                  <td className="px-6 py-4 text-muted-foreground">
+                    The % of classmates you outperformed.
+                  </td>
+                  <td className="px-6 py-4 text-muted-foreground">
+                    Helps show relative performance at a glance.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 font-semibold">Quartile</td>
+                  <td className="px-6 py-4 text-muted-foreground">
+                    Divides class into 4 equal performance groups.
+                  </td>
+                  <td className="px-6 py-4 text-muted-foreground">
+                    Commonly used by schools and scholarships.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
         {/* Testimonials */}
-        <section className="py-6 bg-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-6">What Students Say</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-6 bg-gray-50 rounded-xl shadow">
-                <p className="text-gray-600 italic">
-                  “This calculator helped me instantly know my percentile for
-                  college apps. Super easy!”
-                </p>
-                <p className="mt-4 font-semibold">— Sarah, High School Senior</p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-xl shadow">
-                <p className="text-gray-600 italic">
-                  “Our counselor recommended it. Now I track my rank every
-                  semester.”
-                </p>
-                <p className="mt-4 font-semibold">— David, Junior Student</p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-xl shadow">
-                <p className="text-gray-600 italic">
-                  “A must-have tool if you’re preparing for scholarships.”
-                </p>
-                <p className="mt-4 font-semibold">— Priya, College Applicant</p>
-              </div>
+        <div className="bg-card p-8 rounded-xl shadow-lg mb-12">
+          <div className="flex items-center gap-2 mb-6">
+            <Star className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl font-bold m-0">What Students Say</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-primary/5 p-6 rounded-lg">
+              <p className="text-muted-foreground italic mb-4">
+                "This calculator helped me instantly know my percentile for
+                college apps. Super easy!"
+              </p>
+              <p className="font-semibold">— Sarah, High School Senior</p>
+            </div>
+            <div className="bg-primary/5 p-6 rounded-lg">
+              <p className="text-muted-foreground italic mb-4">
+                "Our counselor recommended it. Now I track my rank every
+                semester."
+              </p>
+              <p className="font-semibold">— David, Junior Student</p>
+            </div>
+            <div className="bg-primary/5 p-6 rounded-lg">
+              <p className="text-muted-foreground italic mb-4">
+                "A must-have tool if you're preparing for scholarships."
+              </p>
+              <p className="font-semibold">— Priya, College Applicant</p>
             </div>
           </div>
-        </section>
+        </div>
 
         {/* Tips for Success */}
         <div className="bg-card p-6 rounded-xl shadow-lg mb-12">
