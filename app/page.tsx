@@ -1,9 +1,15 @@
 import RankCalculator from '@/components/calculator'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { GraduationCap, Trophy, Target, Brain, Star, HelpCircle } from 'lucide-react'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-secondary">
+      {/* Theme Toggle */}
+      <div className="fixed top-6 right-6 z-50">
+        <ThemeToggle />
+      </div>
+      
       <div className="container px-4 py-12 mx-auto max-w-4xl">
         {/* Hero Section */}
         <div className="text-center space-y-4 mb-12">
